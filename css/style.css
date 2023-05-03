@@ -51,7 +51,7 @@ header {
 }
 
 .container {
-    width: 92vw;
+    width: 94vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,7 +104,7 @@ header {
 }
 
 .form-task-input {
-    width: 84vw;
+    width: 86vw;
     height: 8.2vh;
     padding-left: 2vw;
     margin-right: 1.2vw;
@@ -124,16 +124,16 @@ header {
 }
 
 .container-checkbox {
-    border: 1px solid black;
-    border-radius: 0 3vw 0 0;
+    border-top: 1px solid black;
+    border-radius: 0 3vw;
     background-color: var(--color-common-light);
-    padding-left: 5vw;
+    padding-left: 3.5vw;
     height: 57.8vh;
     width: 100vw;
 }
 
 .added-task {
-    margin: 2vh 0;
+    margin: 3vh 0;
 }
 
 .task-input, .task-text {
@@ -143,8 +143,8 @@ header {
 }
 
 .task-text {
-    padding-right: 68vw;
-    padding-left: 5vw;
+    padding-right: 73vw;
+    padding-left: 3vw;
     font-size: 1em;
     font-weight: 400;
 }
