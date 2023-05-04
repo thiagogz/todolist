@@ -52,14 +52,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 94vw;
+    width: 92vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 .avatar {
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-menu {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 /* Informações e adição de novas tarefas */
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-task {
-    margin-bottom: 3vh;
+    margin-bottom: var(--spacing-medium);
 }
 
 .form-task {
@@ -100,24 +100,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-task-label {
     display: block;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 700;
     color: var(--color-text-dark);
 }
 
 .form-task-input {
-    width: 86vw;
-    height: 8.2vh;
+    width: 84vw;
+    height: 4vh;
     padding-left: 2vw;
     margin-right: 1.2vw;
     font-size: 1em;
+    vertical-align: middle;
 }
 
 .form-task-button {
     background-color: var(--color-brand-secondary);
     border-radius: 10%;
     border: none;
-    padding: 1.5vw 2.5vw;
+    padding: 3vh 2.5vw;
+    vertical-align: middle;
 }
 
 .button-add {
@@ -128,15 +130,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Conteúdo após adição de tarefas */
 .container-checkbox {
     border-top: 1px solid black;
-    border-radius: 0 3vw;
+    border-radius: 0 3vw 0 0;
     background-color: var(--color-common-light);
-    padding-left: 3.5vw;
     height: 57vh;
-    width: 100vw;
+    width: auto;
 }
 
 .added-task {
-    margin: 3vh 0;
+    margin: 3vh auto;
+    padding-left: 3.5vw;
+    display: flex;
 }
 
 .task-input, .task-text {
@@ -146,8 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .task-text {
-    padding-right: 73vw;
-    padding-left: 3vw;
+    padding-left: 4vw;
     font-size: 1em;
     font-weight: 400;
 }
@@ -160,11 +162,214 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: line-through;
 }
 
+.icon-box {
+    display: flex;
+    justify-content: space-between;
+    width: 6vw;
+    margin-left: auto;
+    margin-right: 6vw;
+}
+
 .icon-added {
     color: var(--color-text-light);
     font-size: 2em;
     vertical-align: middle;
-    margin-right: 0.5vw;
 }
 
 /* Media queries */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .form-task-input {
+        width: 80vw;
+    }
+
+    .form-task-button {
+        padding: 1vh 3.2vw;
+    }
+
+    .container-checkbox {
+        width: 100vw;
+        height: 61vh;
+    }
+    
+    .task-input {
+        transform: scale(1.2);
+    }
+    
+    .icon-box {
+        margin-right: 9vw;
+    }
+
+    .icon-box {
+        width: 13vw;
+        margin-right: 6vw;
+    }
+
+    .icon-added {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-task-input {
+        width: 78vw;
+    }
+
+    .container-checkbox {
+        height: 62vh;
+    }
+    
+    .icon-added {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding-top: var(--spacing-medium);
+        padding-bottom: var(--spacing-medium);
+    }
+
+    .form-task-input {
+        width: 80vw;
+    }
+
+    .form-task-button {
+        padding: 1.3vh 3vw;
+    }
+
+    .container-checkbox {
+        width: 100vw;
+        height: 55vh;
+    }
+    
+    .task-input {
+        transform: scale(1.3);
+    }
+    
+    .icon-box {
+        width: 9vw;
+        margin-right: 6vw;
+    }
+
+    .icon-added {
+        font-size: 1.7em;
+    }
+}
+  
+@media (min-width: 769px) {
+    .header {
+        padding-top: var(--spacing-medium);
+        padding-bottom: var(--spacing-medium);
+    }
+
+    .form-task-input {
+        width: 82vw;
+    }
+
+    .form-task-button {
+        padding: 1.4vh 3vw;
+    }
+
+    .container-checkbox {
+        width: 100vw;
+        height: 57vh;
+    }
+
+    .task-input {
+        transform: scale(1.4);
+    }
+    
+    .icon-box {
+        width: 8vw;
+        margin-right: 5vw;
+    }
+
+    .icon-added {
+        font-size: 2em;
+    }
+}
+
+@media (min-width:961px) and (max-width: 1200px){
+    .header {
+        padding-top: var(--spacing-medium);
+        padding-bottom: var(--spacing-medium);
+    }
+
+    .avatar {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    .button-menu {
+        font-size: 3em;
+    }
+    
+    .form-task-input {
+        width: 84vw;
+    }
+
+    .form-task-button {
+        padding: 1.4vh 2.5vw;
+    }
+
+    .container-checkbox {
+        width: 100vw;
+        height: 55.5vh;
+    }
+
+    .icon-box {
+        width: 7vw;
+        margin-right: 3vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    .header {
+        padding-top: var(--spacing-medium);
+        padding-bottom: var(--spacing-medium);
+    }
+
+    .avatar {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    .button-menu {
+        font-size: 3em;
+    }
+
+    .form-task-input {
+        width: 84vw;
+        height: 6vh;
+    }
+
+    .form-task-button {
+        padding: 2vh 2.5vw;
+    }
+
+    .container-checkbox {
+        width: 100vw;
+        height: 53.7vh;
+    }
+
+    .icon-box {
+        width: 5vw;
+        margin-right: 5vw;
+    }
+
+    .icon-added {
+        font-size: 2em;
+    }
+}
