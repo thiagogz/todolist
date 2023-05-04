@@ -40,7 +40,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-header {
+/* Cabeçalho */
+.header {
     padding-top: var(--spacing-default);
     padding-bottom: var(--spacing-default);
 }
@@ -72,6 +73,7 @@ header {
     font-size: 3em;
 }
 
+/* Informações e adição de novas tarefas */
 .title {
     line-height: 1.5;
     letter-spacing: -1px;
@@ -123,12 +125,13 @@ header {
     font-size: 1em;
 }
 
+/* Conteúdo após adição de tarefas */
 .container-checkbox {
     border-top: 1px solid black;
     border-radius: 0 3vw;
     background-color: var(--color-common-light);
     padding-left: 3.5vw;
-    height: 57.8vh;
+    height: 57vh;
     width: 100vw;
 }
 
@@ -163,3 +166,5 @@ header {
     vertical-align: middle;
     margin-right: 0.5vw;
 }
+
+/* Media queries */
