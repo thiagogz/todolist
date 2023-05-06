@@ -138,8 +138,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .added-task {
     margin: 3vh auto;
-    padding-left: 3.5vw;
+    padding: 0 5vw 0 3.5vw;
     display: flex;
+    justify-content: space-between;
 }
 
 .task-input, .task-text {
@@ -164,10 +165,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-box {
     display: flex;
-    justify-content: space-between;
-    width: 6vw;
-    margin-left: auto;
-    margin-right: 6vw;
+}
+
+#icon-pen {
+    padding-right: 1vw;
 }
 
 .icon-added {
@@ -198,15 +199,6 @@ h1, h2, h3, h4, h5, h6 {
     .task-input {
         transform: scale(1.2);
     }
-    
-    .icon-box {
-        margin-right: 9vw;
-    }
-
-    .icon-box {
-        width: 13vw;
-        margin-right: 6vw;
-    }
 
     .icon-added {
         font-size: 1.5em;
@@ -227,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) {
     body {
         font-size: 14px;
     }
@@ -253,11 +245,6 @@ h1, h2, h3, h4, h5, h6 {
     .task-input {
         transform: scale(1.3);
     }
-    
-    .icon-box {
-        width: 9vw;
-        margin-right: 6vw;
-    }
 
     .icon-added {
         font-size: 1.7em;
@@ -265,9 +252,8 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 @media (min-width: 769px) {
-    .header {
-        padding-top: var(--spacing-medium);
-        padding-bottom: var(--spacing-medium);
+    body {
+        font-size: 16px;
     }
 
     .form-task-input {
@@ -279,17 +265,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .container-checkbox {
-        width: 100vw;
         height: 57vh;
     }
 
     .task-input {
         transform: scale(1.4);
-    }
-    
-    .icon-box {
-        width: 8vw;
-        margin-right: 5vw;
     }
 
     .icon-added {
@@ -297,12 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (min-width:961px) and (max-width: 1200px){
-    .header {
-        padding-top: var(--spacing-medium);
-        padding-bottom: var(--spacing-medium);
-    }
-
+@media (min-width:961px){
     .avatar {
         width: 2.5em;
         height: 2.5em;
@@ -321,13 +296,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .container-checkbox {
-        width: 100vw;
         height: 55.5vh;
     }
 
-    .icon-box {
-        width: 7vw;
-        margin-right: 3vw;
+    .task-input {
+        transform: scale(1.5);
     }
 }
 
@@ -336,22 +309,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
     }
 
-    .header {
-        padding-top: var(--spacing-medium);
-        padding-bottom: var(--spacing-medium);
-    }
-
-    .avatar {
-        width: 2.5em;
-        height: 2.5em;
-    }
-    
-    .button-menu {
-        font-size: 3em;
-    }
-
     .form-task-input {
-        width: 84vw;
         height: 6vh;
     }
 
@@ -360,13 +318,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .container-checkbox {
-        width: 100vw;
         height: 53.7vh;
-    }
-
-    .icon-box {
-        width: 5vw;
-        margin-right: 5vw;
     }
 
     .icon-added {
