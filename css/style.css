@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-dark);
 }
 
-.task-box {
+.form-task-box, .task-box {
     display: flex;
     justify-content: space-between;
 }
@@ -145,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 5% 0 3.5%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .task-text {
