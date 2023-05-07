@@ -105,11 +105,15 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-dark);
 }
 
+.task-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 .form-task-input {
-    width: 84vw;
+    width: 88%;
     height: 4vh;
     padding-left: 2vw;
-    margin-right: 1.2vw;
     font-size: 1em;
     vertical-align: middle;
 }
@@ -118,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-brand-secondary);
     border-radius: 10%;
     border: none;
-    padding: 3vh 2.5vw;
+    width: 10%;
     vertical-align: middle;
 }
 
@@ -130,33 +134,31 @@ h1, h2, h3, h4, h5, h6 {
 /* Conteúdo após adição de tarefas */
 .container-checkbox {
     border-top: 1px solid black;
-    border-radius: 0 3vw 0 0;
+    border-radius: 0 5vw 0 0;
     background-color: var(--color-common-light);
-    height: 57vh;
-    width: auto;
+    height: 65vh;
+    width: 100%;
 }
 
 .added-task {
     margin: 3vh auto;
-    padding: 0 5vw 0 3.5vw;
+    padding: 0 5% 0 3.5%;
     display: flex;
     justify-content: space-between;
-}
-
-.task-input, .task-text {
-    display: inline-block;
-    color: var(--color-common-dark);
-    vertical-align: middle;
 }
 
 .task-text {
     padding-left: 4vw;
     font-size: 1em;
     font-weight: 400;
+    color: var(--color-common-dark);
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .task-input {
     transform: scale(1.5);
+    display: inline-block;
 }
 
 #task-done {
@@ -183,17 +185,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 12px;
     }
 
-    .form-task-input {
-        width: 80vw;
-    }
-
-    .form-task-button {
-        padding: 1vh 3.2vw;
-    }
-
     .container-checkbox {
-        width: 100vw;
-        height: 61vh;
+        height: 62vh;
     }
     
     .task-input {
@@ -206,10 +199,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 400px) {
-    .form-task-input {
-        width: 78vw;
-    }
-
     .container-checkbox {
         height: 62vh;
     }
@@ -229,16 +218,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: var(--spacing-medium);
     }
 
-    .form-task-input {
-        width: 80vw;
-    }
-
-    .form-task-button {
-        padding: 1.3vh 3vw;
-    }
-
     .container-checkbox {
-        width: 100vw;
         height: 55vh;
     }
     
@@ -256,28 +236,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
     }
 
-    .form-task-input {
-        width: 82vw;
-    }
-
-    .form-task-button {
-        padding: 1.4vh 3vw;
-    }
-
-    .container-checkbox {
-        height: 57vh;
-    }
-
-    .task-input {
-        transform: scale(1.4);
-    }
-
-    .icon-added {
-        font-size: 2em;
-    }
-}
-
-@media (min-width:961px){
     .avatar {
         width: 2.5em;
         height: 2.5em;
@@ -286,13 +244,23 @@ h1, h2, h3, h4, h5, h6 {
     .button-menu {
         font-size: 3em;
     }
-    
-    .form-task-input {
-        width: 84vw;
+
+    .container-checkbox {
+        height: 57vh;
     }
 
-    .form-task-button {
-        padding: 1.4vh 2.5vw;
+    .task-input {
+        transform: scale(1.5);
+    }
+
+    .icon-added {
+        font-size: 2em;
+    }
+}
+
+@media (min-width:961px){
+    body {
+        font-size: 18px;
     }
 
     .container-checkbox {
@@ -305,20 +273,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1200px) {
-    body {
-        font-size: 20px;
+    .container-checkbox {
+        height: 56.7vh;
     }
 
     .form-task-input {
         height: 6vh;
     }
-
+    
     .form-task-button {
-        padding: 2vh 2.5vw;
-    }
-
-    .container-checkbox {
-        height: 53.7vh;
+        width: 8%;
     }
 
     .icon-added {
